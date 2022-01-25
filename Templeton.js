@@ -24,7 +24,7 @@ function Templeton(template) {
 	return eval(`(function(){ 
 	
 	    var __result = "";
-		var echo = function ( value ) { __result += value; };
+	    var echo = function ( value ) { __result += value; };
 	
 	    (function(){ 
 			${sourceCode}
