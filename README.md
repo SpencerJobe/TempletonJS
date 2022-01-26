@@ -7,7 +7,8 @@ Templeton.js provides a single function called Templeton. Pass in a string repre
 There is one special Templeton command you can use from within the template-script tags: `echo`. This function will return a string result of whatever you pass into it. See example usage below. Pay attention to how the for loop is ended.   
 &nbsp;  
 &nbsp;  
-You can use the following shorthand syntax to echo variables. 
+You can use the following shorthand syntax to echo variables.  
+
 `%js{=myObject.title}js%`
 
 
@@ -28,7 +29,8 @@ document.write(Templeton(`
         %js{   for ( var i = 0; i < 100; i += 1) {   }js%
 
             <div id="div_%js{=i}js%">
-            I = %js{=i}js%
+              I = %js{=i}js%
+             (I*2 = %js{ echo(i*2) }js%)
             </div>
         
         %js{ } }js%
