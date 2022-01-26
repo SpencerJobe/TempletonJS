@@ -38,6 +38,5 @@ function Templeton(template) {
         }());
     
         return __result;
-    
     }());`);
 };
